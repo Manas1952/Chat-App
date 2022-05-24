@@ -1,0 +1,8 @@
+1.
+When we write 'const app = express()', express behinds the scene create server(i.e. const server = http.createServer(app)).
+And so we wouldn't have access to 'server' varibale in 'const io = socketio(server)'.
+That's why we manually created server.
+
+2.
+<script src="/socket.io/socket.io.js" /> is client side version of the library.
+When we load thin in, our client side java code will have access to some stuffs to set up communication.
